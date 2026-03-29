@@ -109,7 +109,7 @@ export function MapboxMap() {
   }, [map]);
 
   return (
-    <div className="flex flex-1 flex-col lg:flex-row h-[calc(100vh-49px)] overflow-hidden relative">
+    <div className="flex flex-1 flex-col lg:flex-row h-[calc(100dvh-49px)] overflow-hidden relative">
       {/* Sidebar — desktop/tablet */}
       <aside className="hidden md:flex flex-col gap-4 border-r border-border bg-surface p-4 w-[300px] lg:w-[360px] overflow-y-auto">
         <SidebarContent

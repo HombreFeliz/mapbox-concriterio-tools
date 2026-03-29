@@ -23,10 +23,10 @@ function Banner({ text, cta, href }: BannerProps) {
 
 export function Banners() {
   return (
-    <section className="mx-auto w-full max-w-5xl space-y-4 px-4 py-12">
+    <section id="info" className="mx-auto w-full max-w-5xl space-y-4 px-4 py-12 scroll-mt-4">
       <Banner
         text="¿Necesitas ayuda integrando esto en tu proyecto?"
-        cta="Reservar sesión (90€)"
+        cta="Reservar sesión (30€)"
         href="https://cal.com/polmarza/toma-de-contacto"
       />
       <Banner

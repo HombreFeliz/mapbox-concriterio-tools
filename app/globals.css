@@ -17,6 +17,10 @@
   --font-mono: "Space Mono", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-text-primary);
