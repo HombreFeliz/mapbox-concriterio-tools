@@ -23,7 +23,7 @@ const stack = [
 
 export function StackSection() {
   return (
-    <section className="mx-auto w-full max-w-5xl px-4 py-12">
+    <section id="stack" className="mx-auto w-full max-w-5xl px-4 py-12 scroll-mt-4">
       <h2 className="font-display text-2xl font-semibold text-text-primary mb-6">
         Stack
       </h2>

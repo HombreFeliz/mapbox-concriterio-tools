@@ -11,14 +11,28 @@ export function Header() {
         <span className="text-xs text-text-muted">·</span>
         <span className="text-sm text-text-muted">Con Criterio Tools</span>
       </div>
-      <a
-        href="https://github.com/polmarza/mapbox-concriterio-tools"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="ml-auto text-xs text-text-muted hover:text-text-primary transition-colors"
-      >
-        GitHub
-      </a>
+      <nav className="ml-auto flex items-center gap-4">
+        <a
+          href="#info"
+          className="text-xs text-text-muted hover:text-text-primary transition-colors"
+        >
+          Más información
+        </a>
+        <a
+          href="#stack"
+          className="text-xs text-text-muted hover:text-text-primary transition-colors"
+        >
+          Stack
+        </a>
+        <a
+          href="https://github.com/polmarza/mapbox-concriterio-tools"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-text-muted hover:text-text-primary transition-colors"
+        >
+          GitHub
+        </a>
+      </nav>
     </header>
   );
 }
