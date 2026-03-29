@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #7665FF;
+  --color-primary-hover: #6555ee;
+  --color-background: #0a0a0a;
+  --color-surface: #111111;
+  --color-surface-hover: #1a1a1a;
+  --color-border: #1e1e1e;
+  --color-border-active: #333333;
+  --color-text-primary: #e2e2e2;
+  --color-text-muted: #666666;
+  --color-success: #4ade80;
+  --color-error: #f87171;
+  --font-display: "Fraunces", serif;
+  --font-body: "Outfit", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+/* Marker animation */
+@keyframes marker-appear {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mapbox popup overrides */
+.custom-popup .mapboxgl-popup-content {
+  background: #111111;
+  border: 1px solid #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #e2e2e2;
+  padding: 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+}
+
+.custom-popup .mapboxgl-popup-close-button {
+  color: #666666;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.custom-popup .mapboxgl-popup-close-button:hover {
+  color: #e2e2e2;
+  background: transparent;
+}
+
+.custom-popup .mapboxgl-popup-tip {
+  display: none;
+}
+
+/* Dark theme for Mapbox navigation controls */
+.mapboxgl-ctrl-group {
+  background: #111111 !important;
+  border: 1px solid #1e1e1e !important;
+  border-radius: 8px !important;
+}
+
+.mapboxgl-ctrl-group button {
+  border-color: #1e1e1e !important;
+}
+
+.mapboxgl-ctrl-group button + button {
+  border-top: 1px solid #1e1e1e !important;
+}
+
+.mapboxgl-ctrl-group button span {
+  filter: invert(1);
+}
