@@ -4,7 +4,7 @@ import { useEffect, useRef, useCallback, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { MAPBOX_PUBLIC_TOKEN } from "@/lib/mapbox";
-import { DEFAULT_CENTER, DEFAULT_ZOOM, MAP_STYLES, type MapStyleId } from "@/lib/constants";
+import { DEFAULT_CENTER, DEFAULT_ZOOM, DEFAULT_STYLE, MAP_STYLES, type MapStyleId } from "@/lib/constants";
 import type { Category } from "@/lib/constants";
 import type { GeocodingResult } from "@/lib/mapbox";
 import { MapMarker } from "./MapMarker";
@@ -18,7 +18,7 @@ export function MapboxMap() {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const [map, setMap] = useState<mapboxgl.Map | null>(null);
-  const [styleId, setStyleId] = useState<MapStyleId>("streets");
+  const [styleId, setStyleId] = useState<MapStyleId>(DEFAULT_STYLE);
   const [activeCategory, setActiveCategory] = useState<Category | null>(null);
   const [markerCoords, setMarkerCoords] = useState<[number, number] | null>(null);
   const [locationInfo, setLocationInfo] = useState<GeocodingResult | null>(null);
@@ -32,7 +32,7 @@ export function MapboxMap() {
 
     const m = new mapboxgl.Map({
       container: containerRef.current,
-      style: MAP_STYLES[0].url,
+      style: MAP_STYLES.find((s) => s.id === DEFAULT_STYLE)!.url,
       center: DEFAULT_CENTER,
       zoom: DEFAULT_ZOOM,
     });
