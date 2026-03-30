@@ -35,11 +35,11 @@ export function addGeoJSONLayers(map: mapboxgl.Map) {
       "circle-color": [
         "step",
         ["get", "point_count"],
-        "#7665FF", // small
+        "#4264FB", // small
         10,
-        "#5545dd", // medium
+        "#3355e6", // medium
         25,
-        "#4435cc", // large
+        "#2845cc", // large
       ],
       "circle-radius": [
         "step",
@@ -73,7 +73,7 @@ export function addGeoJSONLayers(map: mapboxgl.Map) {
     source: SOURCE_ID,
     filter: ["!", ["has", "point_count"]],
     paint: {
-      "circle-color": "#7665FF",
+      "circle-color": "#4264FB",
       "circle-radius": 7,
       "circle-stroke-width": 2,
       "circle-stroke-color": "#ffffff",
@@ -183,8 +183,8 @@ export function GeoJSONLayer({ map, activeCategory }: GeoJSONLayerProps) {
         .setHTML(
           `<div>
             <p style="font-weight:600;margin:0 0 4px">${props.name}</p>
-            <p style="font-size:11px;color:#7665FF;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 4px">${props.category}</p>
-            <p style="font-size:13px;color:#999;margin:0">${props.description}</p>
+            <p style="font-size:11px;color:#4264FB;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 4px">${props.category}</p>
+            <p style="font-size:13px;color:#7b93b8;margin:0">${props.description}</p>
           </div>`
         )
         .addTo(map!);
