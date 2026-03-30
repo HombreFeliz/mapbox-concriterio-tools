@@ -23,7 +23,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
 };
 
 export const CLUSTER_COLORS = {
-  small: "#7665FF",
-  medium: "#5545dd",
-  large: "#4435cc",
+  small: "#4264FB",
+  medium: "#3355e6",
+  large: "#2845cc",
 } as const;

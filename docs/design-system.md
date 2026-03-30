@@ -1,16 +1,16 @@
 # Design System — Mapbox GL JS · Con Criterio Tools
 
-## Paleta de colores
+## Paleta de colores (estilo Mapbox)
 
 ```
-Primary:        #7665FF   (violeta Con Criterio — acentos, CTAs, enlaces activos)
-Background:     #0a0a0a   (fondo principal)
-Surface:        #111111   (cards, paneles, sidebar)
-Surface hover:  #1a1a1a   (hover en elementos de superficie)
-Border:         #1e1e1e   (bordes sutiles)
-Border active:  #333333   (bordes en estado activo/focus)
-Text primary:   #e2e2e2   (texto principal)
-Text muted:     #666666   (texto secundario, labels)
+Primary:        #4264FB   (azul Mapbox — acentos, CTAs, enlaces activos)
+Background:     #0a1628   (navy oscuro, fondo principal)
+Surface:        #101d33   (cards, paneles, sidebar)
+Surface hover:  #162744   (hover en elementos de superficie)
+Border:         #1c3055   (bordes sutiles)
+Border active:  #2d4a7a   (bordes en estado activo/focus)
+Text primary:   #e6edf7   (texto principal)
+Text muted:     #7b93b8   (texto secundario, labels)
 Success:        #4ade80   (estados correctos, marcador activo)
 Error:          #f87171   (errores, estados inválidos)
 ```
@@ -18,31 +18,31 @@ Error:          #f87171   (errores, estados inválidos)
 ### Colores específicos para esta demo
 
 ```
-Map accent:     #7665FF   (marcadores, highlights sobre el mapa)
-Cluster bg:     #7665FF   (fondo de clusters)
+Map accent:     #4264FB   (marcadores, highlights sobre el mapa)
+Cluster bg:     #4264FB   (fondo de clusters)
 Cluster text:   #ffffff   (texto dentro de clusters)
-Category chip:  #1e1e1e   (fondo de filtros inactivos)
-Category active:#7665FF   (fondo de filtro activo)
+Category chip:  #1c3055   (fondo de filtros inactivos)
+Category active:#4264FB   (fondo de filtro activo)
 ```
 
 ## Tipografía
 
 ```
-Display:  Fraunces (variable, opsz)   → Headings, título de la demo
-Body:     Outfit (400, 500, 600)      → Texto general, labels, descripciones
-Mono:     Space Mono (400)            → Código, coordenadas, valores técnicos
+Display:  DM Sans (700)               → Headings, título de la demo
+Body:     DM Sans (400, 500, 600)     → Texto general, labels, descripciones
+Mono:     JetBrains Mono (400)        → Código, coordenadas, valores técnicos
 ```
 
 ### Escalas
 
 ```
-Heading 1:    Fraunces 36px / 1.1 line-height / weight 600
-Heading 2:    Fraunces 24px / 1.2 / weight 600
-Heading 3:    Outfit 18px / 1.3 / weight 600
-Body:         Outfit 15px / 1.6 / weight 400
-Body small:   Outfit 13px / 1.5 / weight 400
-Label:        Outfit 12px / 1.4 / weight 500 / uppercase / letter-spacing 0.05em
-Mono:         Space Mono 13px / 1.5 / weight 400
+Heading 1:    DM Sans 36px / 1.1 line-height / weight 700
+Heading 2:    DM Sans 24px / 1.2 / weight 700
+Heading 3:    DM Sans 18px / 1.3 / weight 600
+Body:         DM Sans 15px / 1.6 / weight 400
+Body small:   DM Sans 13px / 1.5 / weight 400
+Label:        DM Sans 12px / 1.4 / weight 500 / uppercase / letter-spacing 0.05em
+Mono:         JetBrains Mono 13px / 1.5 / weight 400
 ```
 
 ## Componentes
@@ -58,8 +58,8 @@ Mono:         Space Mono 13px / 1.5 / weight 400
 ### Cards y paneles
 
 ```
-Background:     #111111
-Border:         1px solid #1e1e1e
+Background:     #101d33
+Border:         1px solid #1c3055
 Border radius:  12px
 Padding:        16px (compact) / 24px (standard)
 ```
@@ -67,19 +67,19 @@ Padding:        16px (compact) / 24px (standard)
 ### Botones
 
 ```
-Primary:        bg #7665FF / text white / hover #6555ee / radius 8px
-Secondary:      bg transparent / border #1e1e1e / text #e2e2e2 / hover bg #1a1a1a
-Ghost:          bg transparent / text #666666 / hover text #e2e2e2
+Primary:        bg #4264FB / text white / hover #3355e6 / radius 8px
+Secondary:      bg transparent / border #1c3055 / text #e6edf7 / hover bg #162744
+Ghost:          bg transparent / text #7b93b8 / hover text #e6edf7
 ```
 
 ### Inputs
 
 ```
-Background:     #111111
-Border:         1px solid #1e1e1e
-Focus border:   #7665FF
-Text:           #e2e2e2
-Placeholder:    #666666
+Background:     #101d33
+Border:         1px solid #1c3055
+Focus border:   #4264FB
+Text:           #e6edf7
+Placeholder:    #7b93b8
 Radius:         8px
 Height:         40px
 ```
@@ -87,26 +87,26 @@ Height:         40px
 ### Category chips (filtros)
 
 ```
-Inactivo:       bg #1e1e1e / text #e2e2e2 / radius 20px / padding 6px 14px
-Activo:         bg #7665FF / text white
+Inactivo:       bg #1c3055 / text #e6edf7 / radius 20px / padding 6px 14px
+Activo:         bg #4264FB / text white
 ```
 
 ### Popups del mapa
 
 ```
-Background:     #111111
-Border:         1px solid #1e1e1e
+Background:     #101d33
+Border:         1px solid #1c3055
 Radius:         8px
-Shadow:         0 4px 12px rgba(0,0,0,0.5)
-Text:           Outfit 14px
+Shadow:         0 4px 16px rgba(0,0,0,0.4)
+Text:           DM Sans 14px
 Punta:          Desactivada (usar offset en su lugar)
 ```
 
 ### Banners (los 3 fijos)
 
 ```
-Background:     #111111
-Border:         1px solid #1e1e1e
+Background:     #101d33
+Border:         1px solid #1c3055
 Radius:         12px
 Layout:         Texto a la izquierda + CTA a la derecha
 CTA button:     Primary style
@@ -117,7 +117,7 @@ Spacing:        24px padding, 16px gap entre banners
 
 ### Marcador custom
 
-- Usar SVG propio con color `#7665FF`
+- Usar SVG propio con color `#4264FB`
 - Tamaño: 32x40px
 - Animación sutil al aparecer (scale de 0.5 a 1, 200ms ease-out)
 
@@ -129,8 +129,8 @@ Spacing:        24px padding, 16px gap entre banners
 ### Clusters
 
 - Círculos con tamaño proporcional al count
-- Colores: `#7665FF` (pequeño) → `#5545dd` (mediano) → `#4435cc` (grande)
-- Texto: blanco, Outfit 13px bold
+- Colores: `#4264FB` (pequeño) → `#3355e6` (mediano) → `#2845cc` (grande)
+- Texto: blanco, DM Sans 13px bold
 - Transición al expandir: 300ms ease
 
 ## Responsive
@@ -144,4 +144,4 @@ Mobile (<768px):    Mapa fullscreen + drawer colapsable desde abajo (40% height)
 
 ## Dark mode
 
-Es el único modo. No hay toggle de light mode. Todo el design system está pensado para dark.
+Es el único modo. No hay toggle de light mode. Todo el design system está pensado para dark con tonos navy al estilo Mapbox.
